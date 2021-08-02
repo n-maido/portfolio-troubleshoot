@@ -3,8 +3,8 @@ services:
   web:
     build: .
     ports:
-      - 8888:80
-    restart: "no" #later: try changing to always
+      - 80:80
+    restart: always
     env_file:
       - .env
     volumes:

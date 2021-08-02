@@ -13,12 +13,12 @@ services:
       - db
 
   db:
-    image: postgres:tag-not-found
+    image: postgres
     restart: always
     env_file:
       - .env
     volumes:
-      - mydatabase:/var/lib/postgresql/data
+      - my_database:/var/lib/postgresql/data
 
 volumes:
   my_database:

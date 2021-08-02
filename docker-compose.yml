@@ -4,7 +4,7 @@ services:
     build: .
     ports:
       - 8888:80
-    restart: "no"
+    restart: "no" #later: try changing to always
     env_file:
       - .env
     volumes:
